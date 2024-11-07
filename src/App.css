@@ -1,0 +1,280 @@
+/* Resetting box sizing and margin/padding for all elements */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+}
+
+/* Main container styling */
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #41f115; /* Light blue background */
+  font-family: Arial, sans-serif;
+  color: #333; /* Main text color */
+  min-height: 100vh;
+}
+
+/* Shadow box effect for main weather and forecast cards */
+.shadow-box {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 16px;
+  margin: 10px;
+}
+
+/* Main content layout */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Styling for weather card */
+.weather-card {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-weight: 500;
+  color: rgb(255, 0, 170);
+}
+
+/* City name styling */
+.city-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Temperature display styling */
+.temperature {
+  font-size: 20px;
+  color: #ff4500;
+  margin-bottom: 8px;
+}
+
+/* Additional info styling */
+.additional-info {
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* Forecast section styling */
+.forecast-section {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Forecast section heading */
+.forecast-heading {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* Forecast cards container */
+.forecast-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Individual forecast card styling */
+.forecast-card {
+  width: 150px;
+  padding: 12px;
+  text-align: center;
+  background: white; /* Light blue background for forecast cards */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-card p {
+  font-size: 14px;
+  color: #eb3f0b;
+  margin: 4px 0;
+  font-weight: 600;
+}
+
+/* Styling for main temperature, feels-like, and weather */
+.temperature,
+.feels-like,
+.weather {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* General paragraph styling */
+p {
+  font-size: 14px;
+  color: #e6771c;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* Input and button styling */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Temperature toggle styling */
+.temperature-toggle {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.toggle-button {
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .weather-card {
+    width: 90%;
+  }
+
+  .forecast-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .temperature,
+  .forecast-card p {
+    font-size: 16px;
+  }
+
+  .forecast-card {
+    width: 100%;
+  }
+
+  .forecast-cards {
+    gap: 5px;
+  }
+}
+.box {
+  display: flex;
+  justify-content: space-evenly;
+}
+.topbox {
+  display: flex;
+}
+/* App.css */
+/* App.css */
+
+/* Main container to hold the two components side by side */
+.body {
+  display: flex; /* Use flexbox to arrange children side by side */
+  flex-wrap: wrap; /* Allow wrapping if the screen is too small */
+  justify-content: space-between; /* Space between the components */
+  gap: 20px; /* Space between the components */
+  padding: 20px;
+}
+
+/* Weather and Favorites container styles */
+.weather-container,
+.favorites-container {
+  flex: 1; /* Each component will take equal available space */
+  min-width: 300px; /* Ensure components don't shrink too much */
+  background-color: #d0f4f5; /* Light background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for clean look */
+}
+
+/* Make sure both components stay side by side on larger screens */
+@media (max-width: 768px) {
+  .body {
+    flex-direction: column; /* Stack components vertically on small screens */
+    align-items: center;
+  }
+}
+.search-btn {
+  outline: 0;
+  border: 0;
+  background: transparent;
+}
+.searchImage {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #333;
+}
+.search {
+  background-color: white;
+}
+.add {
+  width: 30px;
+  height: 30px;
+}
+.weather-icon {
+  width: 120px;
+  height: 120px;
+}
+.remove {
+  width: 30px;
+}
+.todayweatherimage {
+  width: 120px;
+  height: 120px;
+}
+.search-icon {
+  color: #e94f08;
+}
+.add-icon {
+  color: rgb(24, 233, 111);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+.delete-icon {
+  color: red;
+  width: 35px;
+  height: 35px;
+}
+.add-button,
+.delete-button {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+.searched-city {
+  margin: 15px;
+}
+.history {
+  width: 20px;
+  height: 20px;
+}
