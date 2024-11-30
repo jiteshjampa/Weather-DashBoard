@@ -278,3 +278,16 @@ input[type="text"] {
   width: 20px;
   height: 20px;
 }
+.body {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+.fav {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}

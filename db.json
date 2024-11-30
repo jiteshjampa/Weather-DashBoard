@@ -1,7 +1,7 @@
 {
   "favorites": [
     {
-      "id": 1730992177162,
+      "id": "1730992177162",
       "name": "hyderabad",
       "weather": {
         "coord": {
@@ -46,6 +46,54 @@
         "timezone": 19800,
         "id": 1269843,
         "name": "Hyderabad",
+        "cod": 200
+      }
+    },
+    {
+      "id": 1731001842414,
+      "name": "meghalaya",
+      "weather": {
+        "coord": {
+          "lon": 91.3333,
+          "lat": 25.5
+        },
+        "weather": [
+          {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01n"
+          }
+        ],
+        "base": "stations",
+        "main": {
+          "temp": 12.73,
+          "feels_like": 12.41,
+          "temp_min": 12.73,
+          "temp_max": 12.73,
+          "pressure": 1018,
+          "humidity": 90,
+          "sea_level": 1018,
+          "grnd_level": 853
+        },
+        "visibility": 10000,
+        "wind": {
+          "speed": 1.58,
+          "deg": 77,
+          "gust": 1.43
+        },
+        "clouds": {
+          "all": 4
+        },
+        "dt": 1731001627,
+        "sys": {
+          "country": "IN",
+          "sunrise": 1730937997,
+          "sunset": 1730977806
+        },
+        "timezone": 19800,
+        "id": 1263207,
+        "name": "State of Meghālaya",
         "cod": 200
       }
     }

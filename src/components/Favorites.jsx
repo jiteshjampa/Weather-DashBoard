@@ -13,7 +13,7 @@ const Favorites = () => {
   const [newCity, setNewCity] = useState("");
   const [favorites, setFavorites] = useState([]);
   const weatherApiKey = "d1440630b41bfa9d5aa53f7c0ae3e5a5";
-  const jsonServerUrl = "http://localhost:3001/favorites";
+  const jsonServerUrl = "http://localhost:3000/favorites";
 
   // Fetch favorites from JSON server on component mount and when changes are made
   const fetchFavorites = async () => {
@@ -116,20 +116,24 @@ const Favorites = () => {
       <div className="favorites-list">
         {favorites.map((favorite) => (
           <div key={favorite.id} className="favorite-city shadow-box">
-            <h3>{favorite.name}</h3>
-            <img
-              src={imageSelector(favorite.weather.weather[0].main)}
-              alt={favorite.weather.weather[0].main}
-              className="weather-icon"
-            />
-            <p>Temperature: {favorite.weather.main.temp}°C</p>
-            <p>Weather: {favorite.weather.weather[0].description}</p>
-            <button
-              onClick={() => removeCityFromFavorites(favorite.name)}
-              className="delete-button"
-            >
-              <MdDelete className="delete-icon" />
-            </button>
+            <div class="fav">
+              <div>
+                <h3>{favorite.name}</h3>
+                <img
+                  src={imageSelector(favorite.weather.weather[0].main)}
+                  alt={favorite.weather.weather[0].main}
+                  className="weather-icon"
+                />
+                <p>Temperature: {favorite.weather.main.temp}°C</p>
+                <p>Weather: {favorite.weather.weather[0].description}</p>
+              </div>
+              <button
+                onClick={() => removeCityFromFavorites(favorite.name)}
+                className="delete-button"
+              >
+                <MdDelete className="delete-icon" />
+              </button>
+            </div>
           </div>
         ))}
       </div>
