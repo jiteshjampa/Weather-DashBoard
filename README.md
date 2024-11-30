@@ -6,7 +6,7 @@
 
 <h2>🚀 Demo</h2>
 
-[https://www.loom.com/share/d24bd769f044477fa5b09b21f3d72fe8?sid=1a906449-8e07-4f2d-ab9b-0b7faa231ab9](https://www.loom.com/share/d24bd769f044477fa5b09b21f3d72fe8?sid=1a906449-8e07-4f2d-ab9b-0b7faa231ab9)
+[[https://www.loom.com/share/d24bd769f044477fa5b09b21f3d72fe8?sid=1a906449-8e07-4f2d-ab9b-0b7faa231ab9](https://www.loom.com/share/8e524a73d00943808a8efc6eab312e7c?sid=f1ff6363-432b-4e75-adeb-f45732932ce3)]
 
 <h2>Project Screenshots:</h2>
 
